@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link
@@ -60,19 +61,19 @@
           <!--Приховати заголовок-->
           <h1 class="visually-hidden">Портфоліо</h1>
           <ul class="filter-list list">
-            <li>
+            <li class="filter-item">
               <button class="filter-btn button" type="button">Усі</button>
             </li>
-            <li>
+            <li class="filter-item">
               <button class="filter-btn button" type="button">Веб-сайти</button>
             </li>
-            <li>
+            <li class="filter-item">
               <button class="filter-btn button" type="button">Додатки</button>
             </li>
-            <li>
+            <li class="filter-item">
               <button class="filter-btn button" type="button">Дизайн</button>
             </li>
-            <li>
+            <li class="filter-item">
               <button class="filter-btn button" type="button">Маркетинг</button>
             </li>
           </ul>
@@ -84,9 +85,11 @@
                   src="./images/tehnocrack-img.jpg"
                   alt="Ноутбук з відкритим сайтом"
                 />
-                <h2 class="projects-title">Технокряк</h2>
-                <p>Веб-сайт</p></a
-              >
+                <div class="projects-descript">
+                  <h2 class="projects-title">Технокряк</h2>
+                  <p>Веб-сайт</p>
+                </div>
+              </a>
             </li>
             <li class="projects-item">
               <a class="projects-link" href="#"
@@ -95,8 +98,12 @@
                   src="./images/poster-img.jpg"
                   alt="Постер з баскетболістами"
                 />
-                <h2 class="projects-title">Постер New Orlean vs Golden Star</h2>
-                <p>Дизайн</p>
+                <div class="projects-descript">
+                  <h2 class="projects-title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p>Дизайн</p>
+                </div>
               </a>
             </li>
             <li class="projects-item">
@@ -106,8 +113,10 @@
                   src="./images/restaurant-seafood-img.jpg"
                   alt="Логотип ресторану"
                 />
-                <h2 class="projects-title">Ресторан Seafood</h2>
-                <p>Додаток</p>
+                <div class="projects-descript">
+                  <h2 class="projects-title">Ресторан Seafood</h2>
+                  <p>Додаток</p>
+                </div>
               </a>
             </li>
             <li class="projects-item">
@@ -117,8 +126,10 @@
                   src="./images/prime-img.jpg"
                   alt="Навушники"
                 />
-                <h2 class="projects-title">Проєкт Prime</h2>
-                <p>Маркетинг</p>
+                <div class="projects-descript">
+                  <h2 class="projects-title">Проєкт Prime</h2>
+                  <p>Маркетинг</p>
+                </div>
               </a>
             </li>
             <li class="projects-item">
@@ -128,8 +139,10 @@
                   src="./images/boxes-img.jpg"
                   alt="Дві коробки"
                 />
-                <h2 class="projects-title">Проєкт Boxes</h2>
-                <p>Додаток</p>
+                <div class="projects-descript">
+                  <h2 class="projects-title">Проєкт Boxes</h2>
+                  <p>Додаток</p>
+                </div>
               </a>
             </li>
             <li class="projects-item">
@@ -139,8 +152,10 @@
                   src="./images/inspiration-img.jpg"
                   alt="Монітор комп'ютера"
                 />
-                <h2 class="projects-title">Inspiration has no Borders</h2>
-                <p>Веб-сайт</p>
+                <div class="projects-descript">
+                  <h2 class="projects-title">Inspiration has no Borders</h2>
+                  <p>Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li class="projects-item">
@@ -150,8 +165,10 @@
                   src="./images/edition-img.jpg"
                   alt="Відкрита книга"
                 />
-                <h2 class="projects-title">Видання Limited Edition</h2>
-                <p>Дизайн</p>
+                <div class="projects-descript">
+                  <h2 class="projects-title">Видання Limited Edition</h2>
+                  <p>Дизайн</p>
+                </div>
               </a>
             </li>
             <li class="projects-item">
@@ -161,8 +178,10 @@
                   src="./images/lab-img.jpg"
                   alt="Етикетка"
                 />
-                <h2 class="projects-title">Проєкт LAB</h2>
-                <p>Маркетинг</p>
+                <div class="projects-descript">
+                  <h2 class="projects-title">Проєкт LAB</h2>
+                  <p>Маркетинг</p>
+                </div>
               </a>
             </li>
             <li class="projects-item">
@@ -172,8 +191,10 @@
                   src="./images/growing-businnes-img.jpg"
                   alt="Руки працюють за ноутбуком"
                 />
-                <h2 class="projects-title">Growing Business</h2>
-                <p>Додаток</p>
+                <div class="projects-descript">
+                  <h2 class="projects-title">Growing Business</h2>
+                  <p>Додаток</p>
+                </div>
               </a>
             </li>
           </ul>
@@ -184,9 +205,11 @@
     <footer class="footer">
       <div class="container">
         <!--Логотип-->
-        <a class="nav-logo" href="./index.html"
-          >Web<span class="footer-logo-word">Studio</span></a
-        >
+        <div class="footer-logo">
+          <a class="nav-logo" href="./index.html"
+            >Web<span class="footer-logo-word">Studio</span></a
+          >
+        </div>
         <!--Адреса-->
         <address>
           <ul class="list">
