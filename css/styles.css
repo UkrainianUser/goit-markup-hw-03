@@ -73,7 +73,7 @@ img {
 	padding-bottom: 94px;
 }
 .container {
-	max-width: 1170px;
+	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 15px;
@@ -83,6 +83,11 @@ img {
 
 .header {
 	border-bottom: 1px solid var(--border-header-color);
+	text-align: center;
+}
+.header-content {
+	display: flex;
+	justify-content: space-between;
 }
 .nav-logo {
 	color: var(--accent-color);
@@ -129,9 +134,9 @@ img {
 	margin-right: 50px;
 }
 .contacts-link{
+	display: block;
 	padding-top: 32px;
 	padding-bottom: 32px;
-
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
@@ -157,6 +162,9 @@ img {
 .footer-logo-word {
 	color: var(--primary-white-color);
 }
+.footer-item:not(:last-child) {
+	margin-bottom: 9px;
+}
 .footer-map {
 	color: var(--primary-white-color);
 }
@@ -168,6 +176,7 @@ img {
 .hero{
 	padding-top: 200px;
 	padding-bottom: 200px;
+	text-align: center;
 
 	background-color: var(--primary-beckground-color);
 }
@@ -216,6 +225,7 @@ img {
 	max-width: 270px;
 }
 .benefits-title {
+	margin-bottom: 10px;
 	color: var(--title-color);
 	font-weight: 700;
 	font-size: 14px;
@@ -265,6 +275,7 @@ img {
 	padding-bottom: 30px;
 }
 .team-title {
+	margin-bottom: 10px;
 	color: var(--title-color);
 	font-weight: 500;
 	font-size: 16px;
@@ -295,7 +306,6 @@ img {
 
 }
 .filter-btn:hover {
-	padding: 6px 25px;
 	color: var(--primary-white-color);
 	background-color: var(--accent-color);	
 
@@ -306,8 +316,7 @@ img {
 	flex-wrap: wrap;
 }
 .projects-item {
-	width: calc((100% - 64px) / 3);
-	border: 1px solid var(--border-color);
+	width: calc((100% - 60px) / 3);
 }
 .projects-item:not(:nth-child(3n)) {
 	margin-right: 30px;
@@ -317,6 +326,7 @@ img {
 	margin-bottom: 30px;
 }
 .projects-title {
+	margin-bottom: 4px;
 	color: var(--title-color);
 	font-weight: 700;
 	font-size: 18px;
@@ -328,6 +338,9 @@ img {
 }
 .projects-descript {
 	padding: 20px 24px;
+	border-right: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color);
+	border-left: 1px solid var(--border-color);
 }
 .projects-img {
 	width: 370px;
